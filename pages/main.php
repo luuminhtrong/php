@@ -1,0 +1,49 @@
+<?php 
+	if (isset($_GET['quanly'])) 
+	{
+		$tam = $_GET['quanly'];
+	}else
+	{
+		$tam = '';
+	}
+	if($tam=='danhmucsanpham'){
+		include("main/danhmuc.php");
+	}elseif($tam=='sanpham'){
+		include("main/sanpham.php");
+	}elseif($tam=='giohang'){
+		include("main/giohang.php");
+	}elseif($tam=='blog'){
+		include("main/blog.php");
+	}elseif($tam=='tintuc'){
+		include("main/tintuc.php");
+	}elseif($tam=='themgiohang'){
+		include("main/themgiohang.php");
+	}elseif($tam=='timkiem'){
+		include("main/timkiem.php");
+	}elseif($tam=='dangky'){
+		include("main/dangky.php");
+	}elseif($tam=='thanhtoan'){
+		include("main/thanhtoan.php");
+	}elseif($tam=='dangnhap'){
+		include("main/dangnhap.php");
+	}elseif($tam=='backup'){
+		include("main/backup.php");
+	}elseif($tam=='camon'){
+		include("main/camon.php");
+	}elseif($tam=='vanchuyen'){
+		include("main/vanchuyen.php");
+	}elseif($tam=='thongtinthanhtoan'){
+		include("main/thongtinthanhtoan.php");
+	}elseif($tam=='donhangdadat'){
+		include("main/donhangdadat.php");
+	}elseif($tam=='xemdonhang'){
+		include("main/xemdonhang.php");
+	}elseif($tam=='lienhe'){
+		include("main/lienhe.php");
+	}elseif($tam=='tatcasanpham'){
+		include("main/tatcasanpham.php");
+	}
+	else{
+		include("main/index.php");
+	}
+ ?>
